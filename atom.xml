@@ -74,33 +74,6 @@
   </entry>
   
   <entry>
-    <title>博客时光轴</title>
-    <link href="http://www.silenttwice.com/46_my_lbog_timeline.html"/>
-    <id>http://www.silenttwice.com/46_my_lbog_timeline.html</id>
-    <published>2018-10-11T13:16:30.000Z</published>
-    <updated>2018-10-15T08:28:10.692Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="2018-10-15"><a href="#2018-10-15" class="headerlink" title="2018.10.15"></a>2018.10.15</h1><blockquote><p>花费时间：4.7h<br>修改：</p><ul><li>开启捐赠功能、字数统计功能，关闭照片墙功能</li><li>优化标签和分类</li></ul></blockquote><p>为了开启实现捐赠功能，将maupassant更新至最新，主题代码不变，只是jade在发布新版本的时候改名为pug并移除了一些API和语言特性。这些变化起初我并不知道，所以在编译的时候开始出错。我也顺便把Git 2.16.1升级为2.19.1；Node.js 从7.X 升级到8.12。<br>调试的时候发现8.X 以后版本的Node.js弃用了fs.SyncWriteStream这个插件，更新插件无效，网上的方法找了很多都没有效果。于是重新安装Hexo。Hexo从原来的3.3.1升级到3.7.1 发现新版Hexo无法实现我JavaScript脚本的相册墙，只好暂时关闭房馆的照片墙功能，之后再修复</p><p>得出结论：不要轻易升级编译环境，稳定为上，否则尽是折腾</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;2018-10-15&quot;&gt;&lt;a href=&quot;#2018-10-15&quot; class=&quot;headerlink&quot; title=&quot;2018.10.15&quot;&gt;&lt;/a&gt;2018.10.15&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;花费时间：4.7h&lt;br&gt;修改：&lt;/p&gt;
-&lt;ul&gt;
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="http://www.silenttwice.com/categories/Technology/"/>
-    
-    
-      <category term="博客时光轴" scheme="http://www.silenttwice.com/tags/%E5%8D%9A%E5%AE%A2%E6%97%B6%E5%85%89%E8%BD%B4/"/>
-    
-  </entry>
-  
-  <entry>
     <title>OJT part one 知识点整理</title>
     <link href="http://www.silenttwice.com/44.html"/>
     <id>http://www.silenttwice.com/44.html</id>
@@ -127,6 +100,33 @@
       <category term="机坪防火" scheme="http://www.silenttwice.com/tags/%E6%9C%BA%E5%9D%AA%E9%98%B2%E7%81%AB/"/>
     
       <category term="高压氮气瓶" scheme="http://www.silenttwice.com/tags/%E9%AB%98%E5%8E%8B%E6%B0%AE%E6%B0%94%E7%93%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客时光轴</title>
+    <link href="http://www.silenttwice.com/46_my_lbog_timeline.html"/>
+    <id>http://www.silenttwice.com/46_my_lbog_timeline.html</id>
+    <published>2018-10-11T13:16:30.000Z</published>
+    <updated>2018-10-15T08:28:10.692Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2018-10-15"><a href="#2018-10-15" class="headerlink" title="2018.10.15"></a>2018.10.15</h1><blockquote><p>花费时间：4.7h<br>修改：</p><ul><li>开启捐赠功能、字数统计功能，关闭照片墙功能</li><li>优化标签和分类</li></ul></blockquote><p>为了开启实现捐赠功能，将maupassant更新至最新，主题代码不变，只是jade在发布新版本的时候改名为pug并移除了一些API和语言特性。这些变化起初我并不知道，所以在编译的时候开始出错。我也顺便把Git 2.16.1升级为2.19.1；Node.js 从7.X 升级到8.12。<br>调试的时候发现8.X 以后版本的Node.js弃用了fs.SyncWriteStream这个插件，更新插件无效，网上的方法找了很多都没有效果。于是重新安装Hexo。Hexo从原来的3.3.1升级到3.7.1 发现新版Hexo无法实现我JavaScript脚本的相册墙，只好暂时关闭房馆的照片墙功能，之后再修复</p><p>得出结论：不要轻易升级编译环境，稳定为上，否则尽是折腾</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;2018-10-15&quot;&gt;&lt;a href=&quot;#2018-10-15&quot; class=&quot;headerlink&quot; title=&quot;2018.10.15&quot;&gt;&lt;/a&gt;2018.10.15&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;花费时间：4.7h&lt;br&gt;修改：&lt;/p&gt;
+&lt;ul&gt;
+      
+    
+    </summary>
+    
+      <category term="Technology" scheme="http://www.silenttwice.com/categories/Technology/"/>
+    
+    
+      <category term="博客时光轴" scheme="http://www.silenttwice.com/tags/%E5%8D%9A%E5%AE%A2%E6%97%B6%E5%85%89%E8%BD%B4/"/>
     
   </entry>
   
