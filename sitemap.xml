@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.silenttwice.com/46_my_lbog_timeline.html</loc>
+    <loc>http://www.silenttwice.com/blogtimeline.html</loc>
     
-    <lastmod>2018-10-16T10:42:05.759Z</lastmod>
+    <lastmod>2018-10-16T11:36:17.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.silenttwice.com/about/index.html</loc>
+    
+    <lastmod>2018-10-16T11:32:25.232Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://www.silenttwice.com/45.html</loc>
     
     <lastmod>2018-10-16T10:38:15.701Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.silenttwice.com/blogtimeline.html</loc>
-    
-    <lastmod>2018-10-16T09:36:14.889Z</lastmod>
     
   </url>
   
@@ -103,13 +103,6 @@
     <loc>http://www.silenttwice.com/favorite/index.html</loc>
     
     <lastmod>2018-10-15T07:31:51.555Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.silenttwice.com/about/index.html</loc>
-    
-    <lastmod>2018-10-15T04:00:25.652Z</lastmod>
     
   </url>
   
