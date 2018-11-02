@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.silenttwice.com/favorite/moviecollect.html</loc>
+    
+    <lastmod>2018-11-02T02:29:38.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.silenttwice.com/favorite/index.html</loc>
+    
+    <lastmod>2018-11-02T02:28:28.574Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.silenttwice.com/favorite/booksummary.html</loc>
+    
+    <lastmod>2018-11-02T02:23:18.496Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.silenttwice.com/44.html</loc>
     
     <lastmod>2018-10-26T12:11:27.440Z</lastmod>
@@ -37,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://www.silenttwice.com/read.html</loc>
+    <loc>http://www.silenttwice.com/favorite/articleread.html</loc>
     
     <lastmod>2018-10-25T07:33:20.203Z</lastmod>
     
@@ -117,20 +138,6 @@
     <loc>http://www.silenttwice.com/29_C-language-1.html</loc>
     
     <lastmod>2018-10-15T08:14:13.659Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.silenttwice.com/favorite/summary.html</loc>
-    
-    <lastmod>2018-10-15T07:32:32.513Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.silenttwice.com/favorite/index.html</loc>
-    
-    <lastmod>2018-10-15T07:31:51.555Z</lastmod>
     
   </url>
   
