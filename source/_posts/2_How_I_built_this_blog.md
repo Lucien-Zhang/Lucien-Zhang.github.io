@@ -8,10 +8,10 @@ tags:
  - Hexo
  - 教程
 ---
-搭建blog的久来有之，未曾系统学习编程而今能实现，实属不易  
 
+本篇文章有些时日，已经没有参考性，仅作为存档使用
 <!--more-->
-
+搭建blog的久来有之，未曾系统学习编程而今能实现，实属不易  
 **搭建博客使用到的一切如下：**
 
 > 1. [Hexo][1]
@@ -52,7 +52,7 @@ Wiki上是这样描述的：
  
  (2). 安装完后打开Git(马赛克的是我的用户名)
  
- ![Git界面][P2]
+ ![Git界面](\images\post\2_Git_nterface.png)
  
  输入以下命令安装Hexo： 
  
@@ -68,7 +68,7 @@ Wiki上是这样描述的：
  
  1). 打开[Github][6]主页，选择Sign up（注册账号）
  
-![Github主页][P1]
+![Github主页](\images\post\Github官网.jpg)
 ![Github新建账户][P3]
  
 **注意** ：
@@ -228,12 +228,12 @@ Change Log:
   [20]: https://www.jianshu.com/p/67c57c70f275
 
   [P1]: 
-  [P2]: \images\post\Giti_nterface.png
-  [P3]: http://oqebkkb7i.bkt.clouddn.com/Github%E6%96%B0%E5%BB%BA%E8%B4%A6%E6%88%B7.png
-  [P4]: http://oqebkkb7i.bkt.clouddn.com/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.jpg
-  [P5]: http://oqebkkb7i.bkt.clouddn.com/%E5%BB%BA%E4%BB%93%E7%9A%84%E6%97%B6%E5%80%99%E7%9A%84%E6%A0%B7%E5%AD%90.png
-  [P6]: http://oqebkkb7i.bkt.clouddn.com/%E5%BB%BA%E5%AE%8C%E4%BB%93%E5%BA%93%E5%90%8E%E7%9A%84%E6%A0%B7%E5%AD%90.png
-  [P7]: http://oqebkkb7i.bkt.clouddn.com/%E8%AE%BE%E7%BD%AE.png
-  [P8]: http://oqebkkb7i.bkt.clouddn.com/%E9%80%89%E6%8B%A9SSH.png
-  [P9]: http://oqebkkb7i.bkt.clouddn.com/%E9%85%8D%E7%BD%AESSH.png
-  [P10]: http://oqebkkb7i.bkt.clouddn.com/%E4%B8%BB%E9%A2%98.png
+
+  [P3]: \images\post\Github%E6%96%B0%E5%BB%BA%E8%B4%A6%E6%88%B7.png
+  [P4]: \images\post\%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.jpg
+  [P5]: \images\post\%E5%BB%BA%E4%BB%93%E7%9A%84%E6%97%B6%E5%80%99%E7%9A%84%E6%A0%B7%E5%AD%90.png
+  [P6]: \images\post\%E5%BB%BA%E5%AE%8C%E4%BB%93%E5%BA%93%E5%90%8E%E7%9A%84%E6%A0%B7%E5%AD%90.png
+  [P7]: \images\post\%E8%AE%BE%E7%BD%AE.png
+  [P8]: \images\post\%E9%80%89%E6%8B%A9SSH.png
+  [P9]: \images\post\%E9%85%8D%E7%BD%AESSH.png
+  [P10]: \images\post\%E4%B8%BB%E9%A2%98.png
