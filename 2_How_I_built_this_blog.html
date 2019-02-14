@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="FWRTaUZMdjbK25PB">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4664511747825922",
+          enable_page_level_ads: true
+     });
+</script>
+
+  <meta name="description" content="本篇文章有些时日，已经没有参考性，仅作为存档使用">
+<meta name="keywords" content="教程,Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我是如何搭建个人博客的">
+<meta property="og:url" content="http://www.silenttwice.com/2_How_I_built_this_blog.html">
+<meta property="og:site_name" content="Polychromatic Cell">
+<meta property="og:description" content="本篇文章有些时日，已经没有参考性，仅作为存档使用">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/2_Git_nterface.png">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/Github官网.jpg">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/Github%E6%96%B0%E5%BB%BA%E8%B4%A6%E6%88%B7.png">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.jpg">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/%E5%BB%BA%E4%BB%93%E7%9A%84%E6%97%B6%E5%80%99%E7%9A%84%E6%A0%B7%E5%AD%90.png">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/%E5%BB%BA%E5%AE%8C%E4%BB%93%E5%BA%93%E5%90%8E%E7%9A%84%E6%A0%B7%E5%AD%90.png">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/%E9%85%8D%E7%BD%AESSH.png">
+<meta property="og:image" content="http://www.silenttwice.com/images/post/%E4%B8%BB%E9%A2%98.png">
+<meta property="og:updated_time" content="2019-02-14T03:03:34.013Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我是如何搭建个人博客的">
+<meta name="twitter:description" content="本篇文章有些时日，已经没有参考性，仅作为存档使用">
+<meta name="twitter:image" content="http://www.silenttwice.com/images/post/2_Git_nterface.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Polychromatic Cell" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://www.silenttwice.com/2_How_I_built_this_blog.html">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>我是如何搭建个人博客的 | Polychromatic Cell</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99651042-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-99651042-1');
+</script>
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Polychromatic Cell</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Like fish slowly flowing</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-commonweal">
+    <a href="/favorite/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>房馆</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.silenttwice.com/2_How_I_built_this_blog.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lucien">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Polychromatic Cell">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">我是如何搭建个人博客的
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-09 15:24:40" itemprop="dateCreated datePublished" datetime="2017-06-09T15:24:40+08:00">2017-06-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-14 11:03:34" itemprop="dateModified" datetime="2019-02-14T11:03:34+08:00">2019-02-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Technology/" itemprop="url" rel="index"><span itemprop="name">Technology</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2_How_I_built_this_blog.html#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2_How_I_built_this_blog.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本篇文章有些时日，已经没有参考性，仅作为存档使用<br><a id="more"></a><br>搭建blog的久来有之，未曾系统学习编程而今能实现，实属不易<br><strong>搭建博客使用到的一切如下：</strong></p>
+<blockquote>
+<ol>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="https://github.com/" target="_blank" rel="noopener">Github</a>的<a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a></li>
+<li>代理软件,我使用的是<a href="http://shadowsocks.org/en/index.html" target="_blank" rel="noopener">Shadowsocks</a>（以下简称为SS）</li>
+<li>一台能上网的电脑（推荐使用<a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank" rel="noopener">Chrome浏览器</a>，翻墙的话最好SS配合SwitchyOmege插件实现）</li>
+</ol>
+</blockquote>
+<h2 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h2><p>关于其简介，引用官方文档：</p>
+<blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<p>其官方文档有详细的安装及使用方法，具体请跳<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo文档简体中文版</a></p>
+<h2 id="什么是Github和Github-Pages"><a href="#什么是Github和Github-Pages" class="headerlink" title="什么是Github和Github Pages"></a>什么是Github和Github Pages</h2><p>什么是Github，引用百度百科的说法：</p>
+<blockquote>
+<p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
+</blockquote>
+<p>而Github，其官方文档为：</p>
+<blockquote>
+<p>GitHub Pages is designed to host your personal, organization, or project pages directly from a GitHub repository. </p>
+<p>You can create and publish GitHub Pages online using the Jekyll Theme Chooser. If you prefer to work locally, you can use GitHub Desktop or the command line.<br>GitHub Pages is a static site hosting service and doesn’t support server-side code such as, PHP, Ruby, or Python.</p>
+</blockquote>
+<p>我简陋翻译一下：Github是一种<strong>静态站点托管服务</strong>，可以在Github仓库里托管你的个人、组织或者项目页面。可以使用Jekyll之类的静态框架，但<strong>不支持PHP、Ruby或者Python等服务端代码</strong></p>
+<h2 id="什么是Shadowsocks"><a href="#什么是Shadowsocks" class="headerlink" title="什么是Shadowsocks"></a>什么是Shadowsocks</h2><p>Wiki上是这样描述的：</p>
+<blockquote>
+<p>Shadowsocks是使用Python、C++、C#以及Go等语言开发、基于Apache许可证的开放源代码软件，用于保护网络流量、加密数据传输以及突破中国网络审查。</p>
+</blockquote>
+<p>要使用Shadowscoks突破GFW，除了该有的软件和客户端外，还必须要有一台国外的服务器作为服务端，这台国外的服务器是用来中转数据的，有点类似于直接考公务员和走关系当公务员这样，服务端充当的就是这个中间人。</p>
+<h3 id="为什么一定要实现翻墙"><a href="#为什么一定要实现翻墙" class="headerlink" title="为什么一定要实现翻墙"></a><strong>为什么一定要实现翻墙</strong></h3><p>虽然Github、Hexo、可以不翻墙访问，但是访问速度很慢，特别是对某些地区的不同运营商不够友好，所以借助代理软件，可以更快地访问网站。当然啦，翻墙的作用远不止这些，这里不多提及。</p>
+<h2 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h2><h3 id="一、安装Hexo"><a href="#一、安装Hexo" class="headerlink" title="一、安装Hexo"></a>一、安装Hexo</h3><p><em>必要时，请参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo文档</a></em><br> (1). 安装Hexo有两个必须安装的东西：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a>   <strong>(<em>Windows用户点击超链接跳转至下载界面，安装过程直接点击下一步即可，无法下载或者其他用户请参考文档</em> ）</strong>  </p>
+<p> (2). 安装完后打开Git(马赛克的是我的用户名)</p>
+<p> <img src="\images\post\2_Git_nterface.png" alt="Git界面"></p>
+<p> 输入以下命令安装Hexo： </p>
+<pre><code>$ npm install -g hexo-cli
+</code></pre><p> <strong>安装完成后会再次出现这个绿红黄，才可以继续键入命令</strong></p>
+<h3 id="二、安装Shadowscoks（无法翻墙的人从百度下载，解压即可用）"><a href="#二、安装Shadowscoks（无法翻墙的人从百度下载，解压即可用）" class="headerlink" title="二、安装Shadowscoks（无法翻墙的人从百度下载，解压即可用）"></a>二、安装<a href="http://shadowsocks.org/en/index.html" target="_blank" rel="noopener">Shadowscoks</a>（<em>无法翻墙的人从百度下载</em>，<strong>解压即可用</strong>）</h3><p>翻墙可以更快地访问Hexo、Github等网站</p>
+<h3 id="三、申请Github账号"><a href="#三、申请Github账号" class="headerlink" title="三、申请Github账号"></a>三、申请Github账号</h3><p>申请Github账号是因为这个网站有免费的静态页面托管项目可以用</p>
+<p> 1). 打开<a href="https://github.com/" target="_blank" rel="noopener">Github</a>主页，选择Sign up（注册账号）</p>
+<p><img src="\images\post\Github官网.jpg" alt="Github主页"><br><img src="\images\post\Github%E6%96%B0%E5%BB%BA%E8%B4%A6%E6%88%B7.png" alt="Github新建账户"></p>
+<p><strong>注意</strong> ：<br> <strong>①. 申请的账号名将会是你的域名，所以要认真考虑。</strong><br> <strong>②. 注册Github账号的时候会要求验证邮箱，请验证，否则最后的域名可能显示404</strong></p>
+<p>2). 登陆后在右上角“＋”图标右边有个向下的箭头，点击，选择<code>New repository</code></p>
+<p><img src="\images\post\%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.jpg" alt="Github新建仓库"></p>
+<p><img src="\images\post\%E5%BB%BA%E4%BB%93%E7%9A%84%E6%97%B6%E5%80%99%E7%9A%84%E6%A0%B7%E5%AD%90.png" alt="建仓的时候的样子">  </p>
+<p><strong>注意</strong>：<code>Respository name</code>那栏必须以前面的<code>Owner</code>一致，比如<code>Owner</code>是<code>uesrname</code>,那么<code>Respository name</code>就应该写作<code>uesrname.github.io</code>，请留意你的username，下面还会用到。  </p>
+<p>我以ABC为例子建完仓库后，Github页面的样子，也是最开始没有上传代码的样子。</p>
+<p><img src="\images\post\%E5%BB%BA%E5%AE%8C%E4%BB%93%E5%BA%93%E5%90%8E%E7%9A%84%E6%A0%B7%E5%AD%90.png" alt="建完仓库的样子"></p>
+<p>至此，Hexo的初步安装，Github账户以及仓库就弄好了，不过这才是刚开始</p>
+<hr>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="一、关联SSH"><a href="#一、关联SSH" class="headerlink" title="一、关联SSH"></a>一、关联SSH</h3><p> <strong>关联SSH是为了把代码部署到Github上</strong></p>
+<p> 1). 打开先前安装好的Git：在桌面鼠标右键，有”Git Bash here”的选项，点击即可。</p>
+<p>![Git客户端界面][P2]</p>
+<p> 2). 设置emai和github注册邮箱</p>
+<pre><code>$ git config --global user.name &quot;你的GitHub用户名&quot;
+
+$ git config --global user.email &quot;你的GitHub注册邮箱&quot;
+</code></pre><p><strong>注意</strong>：需要等绿红黄的字母出现，才可以继续输入下一个命令</p>
+<p>3). 生成ssh密钥:输入下面命令</p>
+<pre><code>$ ssh-keygen -t rsa -c &quot;生成SSH密匙&quot;
+</code></pre><p>一般情况下是不需要密码的，所以，接下来直接回车就好。  </p>
+<p>此时，在系统盘用户文件夹下就会有一个新的文件夹.ssh（例如我的是C:\Users\Lucien.ssh），里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。  </p>
+<p><strong>注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。</strong></p>
+<p>4). 添加公钥到github：</p>
+<p>点击Github用户头像，然后点击显示的Settings(设置)选项；</p>
+<p><img src="\images\post\%E8%AE%BE%E7%BD%AE.png" alt="Github setting图"></p>
+<p>在用户设置栏，点击SSH and GPG keys选项，然后点击New SSH key(新建SSH)按钮；  </p>
+<p><img src="\images\post\%E9%85%8D%E7%BD%AESSH.png" alt="SSH and GPG keys"></p>
+<p>用笔记本打开id_rsa.pub，并将其中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按钮  </p>
+<p>弄完后，就可以来测试下SSH起作用没有了  </p>
+<p>在Git里输入命令  </p>
+<pre><code>$ ssh -T git@github.com
+</code></pre><p>接下来会出来下面的确认信息：</p>
+<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established. 
+RSA key fingerprint is 17:24:ac:a5:76:28:24:36:62:1b:36:4d:eb:df:a6:45.
+Are you sure you want to continue connecting (yes/no)?
+</code></pre><p>输入yes后回车。  </p>
+<p>如果显示的显示如下信息，那么SSH就配置好了。  </p>
+<pre><code>Hi username! You&apos;ve successfully authenticated, 
+but GitHub does not provide shell access.
+</code></pre><p>上面的都是前期工作，到这里就可以开始创建博客了</p>
+<hr>
+<h2 id="创建博客页面"><a href="#创建博客页面" class="headerlink" title="创建博客页面"></a>创建博客页面</h2><p>（关掉刚刚Git窗口），在任意你想放博客文件的地方右键<code>Git brush here</code>，因为接下来会生成一系列文件在这个文件夹里</p>
+<p>在Git里输入命令如下：</p>
+<pre><code>$ hexo init  //初始化Hexo（命令后面的斜杠是注释，不用打进去）
+$ npm install  //安装依赖包
+</code></pre><p>完成之后再输入：</p>
+<pre><code>$ hexo generate  //生成静态页面
+$ hexo server  //启动本地服务器
+</code></pre><p>启动本地服务器后，打开浏览器，输入<code>localhost:4000</code>就能查看网页了，如果要关掉服务器，在Git里用Ctrl + C  </p>
+<p>本地服务器可以让你调试页面，不用每次修改都上传到网络服务器才能查看，很方便。  </p>
+<p><strong>虽然好不容易已经做到了这一步，但是生成的页面还是Hexo默认的页面，我们需要定制我们想要的页面不是？</strong></p>
+<h2 id="个性化博客"><a href="#个性化博客" class="headerlink" title="个性化博客"></a>个性化博客</h2><p>放心，hexo上有很多开源主题，<a href="https://hexo.io/themes/" target="_blank" rel="noopener">戳这里</a>看好哪个选哪个，点进去之后，会跳转到主题github页面，往下拉，会看到这个：（这是我在Hexo上随便找的一个主题）</p>
+<p><img src="\images\post\%E4%B8%BB%E9%A2%98.png" alt="hexo主题"></p>
+<p>复制这个地址，粘贴到Git里，就会开始自动下载了  </p>
+<p> 下载完之后主题会出现在博客目录下的<code>themes</code>，这个时候在blog目录下的<code>_config.yml</code>把主题换为刚下载好的这个主题，然后upgrade，再部署一下就可以啦。（每个hexo主题都有安装教程，有些有中文教程，可以找找哩，<a href="https://github.com/henryhuang/hexo-theme-aloha/wiki/zh_CN" target="_blank" rel="noopener">比如这篇</a>）  </p>
+<hr>
+<p> 以上这篇教程不算面面俱到，而且也是参考网上其他教程和自己亲身经历写出来的，如果有什么错误还请各位指正。</p>
+<hr>
+<p> 参考文章：</p>
+<blockquote>
+<p><a href="http://www.cnblogs.com/cherishzy/p/5694658.html" target="_blank" rel="noopener">在Github上面搭建Hexo博客（一）：部署到Github - by cherishzy</a><br><a href="http://xiaomiya.iteye.com/blog/2106972?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">搭建hexo博客并部署到github上 - by xiaomiya</a><br><a href="http://blog.csdn.net/xuezhisdc/article/details/53130328" target="_blank" rel="noopener">hexo教程系列——hexo安装教程 -  by 张学志の博客</a><br><a href="http://www.jianshu.com/p/f4cc5866946b#" target="_blank" rel="noopener">手把手教从零开始在GitHub上使用Hexo搭建博客教程(一)-附GitHub注册及配置</a><br><a href="http://www.jianshu.com/p/dd9ef08b12df" target="_blank" rel="noopener">手把手教从零开始在GitHub上使用Hexo搭建博客教程(二)-Hexo参数设置</a><br><a href="http://www.jianshu.com/p/7f05b452fd3a" target="_blank" rel="noopener">手把手教从零开始在GitHub上使用Hexo搭建博客教程(三)-使用Travis自动部署Hexo(1)</a><br><a href="http://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="noopener">5分钟 搭建免费个人博客</a><br><a href="http://www.jianshu.com/p/ce1619874d34" target="_blank" rel="noopener">静态博客框架之Hexo &amp; Jekyll</a><br><a href="https://www.jianshu.com/p/67c57c70f275" target="_blank" rel="noopener">hexo 部署至Git遇到的坑</a></p>
+</blockquote>
+<p> 很感谢以上文章的作者，也很感谢开源的hexo、主题制作者、还有Github，啊，圆了一桩梦。</p>
+<hr>
+<p>Change Log:<br>2017-06-09 完成文章<br>2018-02-25 增添细节</p>
+<p>  [P1]: </p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Lucien 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/教程/" rel="tag"># 教程</a>
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/1_hello_word.html" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Lucien</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.wukongdaily.com/" title="悟空的日常" target="_blank">悟空的日常</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Github和Github-Pages"><span class="nav-number">2.</span> <span class="nav-text">什么是Github和Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Shadowsocks"><span class="nav-number">3.</span> <span class="nav-text">什么是Shadowsocks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么一定要实现翻墙"><span class="nav-number">3.1.</span> <span class="nav-text">为什么一定要实现翻墙</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建步骤"><span class="nav-number">4.</span> <span class="nav-text">搭建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装Hexo"><span class="nav-number">4.1.</span> <span class="nav-text">一、安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、安装Shadowscoks（无法翻墙的人从百度下载，解压即可用）"><span class="nav-number">4.2.</span> <span class="nav-text">二、安装Shadowscoks（无法翻墙的人从百度下载，解压即可用）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、申请Github账号"><span class="nav-number">4.3.</span> <span class="nav-text">三、申请Github账号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">5.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、关联SSH"><span class="nav-number">5.1.</span> <span class="nav-text">一、关联SSH</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建博客页面"><span class="nav-number">6.</span> <span class="nav-text">创建博客页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#个性化博客"><span class="nav-number">7.</span> <span class="nav-text">个性化博客</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright"> &copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lucien</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://lucien-1.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://www.silenttwice.com/2_How_I_built_this_blog.html';
+        this.page.identifier = '2_How_I_built_this_blog.html';
+        this.page.title = '我是如何搭建个人博客的';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lucien-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
