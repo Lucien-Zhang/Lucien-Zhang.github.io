@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.silenttwice.com/"/>
-  <updated>2019-03-06T13:26:01.279Z</updated>
+  <updated>2019-03-08T07:01:16.534Z</updated>
   <id>http://www.silenttwice.com/</id>
   
   <author>
@@ -17,9 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JHA(Job Hazard Analysis) 总结</title>
+    <link href="http://www.silenttwice.com/50_JHA_summary.html"/>
+    <id>http://www.silenttwice.com/50_JHA_summary.html</id>
+    <published>2019-03-08T06:17:32.000Z</published>
+    <updated>2019-03-08T07:01:16.534Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是JHA"><a href="#什么是JHA" class="headerlink" title="什么是JHA"></a>什么是JHA</h1><p>工作危害分析（Job Hazard Analysis）是一种安全风险分析方法，适合于对作业活动中存在的风险进行分析，制定控制和改进措施，以达到控制风险、减少和杜绝事故的目标。<a id="more"></a><br><a href="https://www.convergencetraining.com/blog/what-is-a-jha" target="_blank" rel="noopener">WHAT IS A JHA</a></p><h1 id="JHA例子"><a href="#JHA例子" class="headerlink" title="JHA例子"></a>JHA例子</h1><h2 id="737CL"><a href="#737CL" class="headerlink" title="737CL"></a>737CL</h2><h3 id="B-2113-主客舱门机械结构润滑"><a href="#B-2113-主客舱门机械结构润滑" class="headerlink" title="B-2113 主客舱门机械结构润滑"></a>B-2113 主客舱门机械结构润滑</h3><p>ATA 章节：TASK 12-25-21-643-007</p><p>风险描述：</p><ol><li>B737CL飞机本身自带登机梯，在登机门左下侧多了一个辅助门把手，所以在拆door lining时 内左下角自带登机梯用的辅助把手也需要拆除</li><li>拆除辅助把手时 尽量两边同时松，否则把手可能变形或折断。</li><li>前登机门和勤务门两者构型不同，拆下前登机门 lining 时容易误将两侧锁定密封条的 FASTENERS 拆下（实际只用拆下两侧 LINING SUPPORT 的螺钉），装回时没做密封处理导致舱门气密性不足增压测试无法通过。</li><li>因为拆下 lining时顶部密封条带有一排螺钉，所以拆开后lining 会外掀下垂，如果不扶住lining 可能会发生永久形变导致托板位移螺钉装不进去。<br>预防控制措施：</li><li>工作前细读工卡手册，做好标记，明确不同舱门的构型差异，工作时尽量不要同组人连续做不同构型舱门结构润滑，防止漏拆错拆。</li><li>提前借好密封胶、相应的备用螺钉，拆下时将螺钉做好分类，防止装错。</li><li>选择合适高度的登机梯以及安全带，合理调配现场人力资源。</li></ol><p><img src="\images\post\50-1.png" alt=""><br><img src="\images\post\50-2.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是JHA&quot;&gt;&lt;a href=&quot;#什么是JHA&quot; class=&quot;headerlink&quot; title=&quot;什么是JHA&quot;&gt;&lt;/a&gt;什么是JHA&lt;/h1&gt;&lt;p&gt;工作危害分析（Job Hazard Analysis）是一种安全风险分析方法，适合于对作业活动中存在的风险进行分析，制定控制和改进措施，以达到控制风险、减少和杜绝事故的目标。
+    
+    </summary>
+    
+      <category term="Aircraft" scheme="http://www.silenttwice.com/categories/Aircraft/"/>
+    
+    
+      <category term="JHA" scheme="http://www.silenttwice.com/tags/JHA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>再见了，我的大学</title>
-    <link href="http://www.silenttwice.com/50_Say_goodbye_to_my_college_life.html"/>
-    <id>http://www.silenttwice.com/50_Say_goodbye_to_my_college_life.html</id>
+    <link href="http://www.silenttwice.com/49_Say_goodbye_to_my_college_life.html"/>
+    <id>http://www.silenttwice.com/49_Say_goodbye_to_my_college_life.html</id>
     <published>2019-03-06T13:23:40.000Z</published>
     <updated>2019-03-06T13:26:01.279Z</updated>
     
@@ -433,28 +455,6 @@
     
       <category term="After reading" scheme="http://www.silenttwice.com/categories/After-reading/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>谁不是网瘾少年呢</title>
-    <link href="http://www.silenttwice.com/33_Everyone_has_internet_addiction.html"/>
-    <id>http://www.silenttwice.com/33_Everyone_has_internet_addiction.html</id>
-    <published>2018-05-09T23:35:50.000Z</published>
-    <updated>2019-02-14T03:03:34.017Z</updated>
-    
-    <content type="html"><![CDATA[<p>当课上老师说到：“现在交朋友的方式已经不止书信电话，还有互联网。谁能想到一个整天不出宿舍门的同学能交到女朋友呢？”我有点不屑，也觉得可惜。<a id="more"></a>不屑是不屑网恋，可惜是可惜现在用书信联系的人已经不多了。<br>我大概已经有两三个星期没去翻信箱，今天走过门房时透过窗玻璃，满满当当的一盒信件。很大可能还没有我的信件，不必去翻。我这么告诉自己，迈着步子离开了。在转角处习惯性地从口袋摸出手机，即使什么消息也没有。我没有“看时间”的借口，因为我有手表。曾经和一个初中同学出去，他看见我的手表，问我，为什么戴着这样的手表，这手表简直就和他爷爷的一模一样。“看时间。”“看时间要什么手表，买个厉害的手机，要看时间的时候就从口袋里掏出来，多潇洒诺。” 他从口袋里摸出他的小灵通，看看它，又看看我，脸上挂满笑容。<br>印象中那时的网瘾少年是小学时找各种借口骗家里人，跑去网吧玩电脑，拿攒了一个月的零花钱开了五小时（后来被抓到）；谁家有电脑就跟谁一起玩，待到很晚才回家（回家被骂）；在班级上比QQ等级、Q宠等级（当然是比输了，那时家里还没电脑，都是打电话拜托同学帮忙挂Q）。上初中后的网瘾少年是半夜起床偷玩电脑（后来被抓到）；周末玩电脑超出父母规定的时间（姐弟吵架，被父母骂）。高中的网瘾少年开始对游戏无感，却在各种论坛、讨论组、维基、油管中留下足迹（依旧受斥责，但我脸皮已经很厚）。虽然从高二开始渐渐从玩电脑转移到玩手机。但我还是个网瘾少年，这点未曾变过。<br>智能手机的普及（大概是小米2发布后）在12年就已经开始，但我用上安卓手机是14年底。那时我还没有意识到“网瘾”这个词的定义已经悄悄发生了变化。随着越来越多人使用智能手机，有手机的人的年龄越来越年轻化，网瘾这个词已经渐渐不被人提起，因为几乎每个人都有网瘾，不过人们现在更喜欢把网瘾当作是手机依赖症的一部分。即使无所事事，也会打开微博或朋友圈，抖音，知乎，快手，脸书，INS，哪怕是一直刷新聊天列表（依旧没有小红点）也不愿放下手机。与肚子疼时不愿意上厕所直到忍不住了才肯放下鼠标的人相比，前者和后者有质的区别吗？满世界找充电宝和“*的，这电脑这么垃圾，还怎么玩”两者心态有质的区别吗？都是因为想要的得不到满足而焦虑、发脾气，但更多时候这种焦虑、愤怒是无必要的，只会徒增戾气，弄得双眼疲惫。<br>安卓手机上有个软件叫“Quality Time”，能够追踪手机的使用次数，每次使用的软件及其时长。一段时间后，我发现每天早上从朦胧中把我唤醒的，不是闹钟，不是梦想，也不是尿急，而是手机。自从用了这个软件，我都尽量减少手机的使用时间和亮屏次数。但是习惯性地把手机摸出口袋的习惯并没有改掉，摸出手机后甚至还会稍微停顿一下。因为要看看呼吸灯有没有亮。这无疑又隐性地增加了使用手机的时间。<br>最近我无时不刻在想，网瘾会不会消失，但是想想就知道不会了。从电脑开始普及到家庭，从手机开始普及到每个人，网瘾就像慢性病毒，侵袭着每个人，就像黄种人在黄种人群中会惊呼“哇！这里有个黄种人”一样，当每个人都有网瘾，并习以为常的时候，似乎也就再没有提起的必要。我认识的人中，只有极少数高度自律的人和清楚明白手机本质的人会合理地使用手机。以前我称手机、电脑这类让人易沉迷、极考验人的自律性的产品为诱惑（其实诱惑分很多种，这只是其中一种形式）。现在它还是叫诱惑，没有变。以前我要抵抗诱惑，现在依旧要。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;当课上老师说到：“现在交朋友的方式已经不止书信电话，还有互联网。谁能想到一个整天不出宿舍门的同学能交到女朋友呢？”我有点不屑，也觉得可惜。
-    
-    </summary>
-    
-      <category term="Emotion" scheme="http://www.silenttwice.com/categories/Emotion/"/>
-    
-    
-      <category term="Emotion" scheme="http://www.silenttwice.com/tags/Emotion/"/>
     
   </entry>
   
