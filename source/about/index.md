@@ -1,4 +1,4 @@
-﻿---
+---
 title: 
 date: 2019-01-17 00:10:25
 type: about
@@ -9,7 +9,6 @@ type: about
 
 
 我的[博客折腾日记](/blogtimeline)
-我的[数码设备](/3C)
  
  ### Contant
  Email : q7q5123@hotmail.com
