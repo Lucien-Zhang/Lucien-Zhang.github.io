@@ -46,3 +46,11 @@ git push
 hexo d -g 
 ```
 渲染静态页面并推送到Master分支
+
+* 如果在输入`git commit -m`指令时需要认证，那么：
+```
+按照自己的邮箱和用户名输入一下信息
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+```
