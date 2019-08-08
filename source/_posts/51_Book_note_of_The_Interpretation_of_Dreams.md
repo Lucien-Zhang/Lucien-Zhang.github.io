@@ -2,7 +2,7 @@
 title: 释梦其实是为了寻找、了解自我 —— 《梦的解析》阅读笔记
 date: 2019-03-14 21:50:44
 tags: 
-   - Book
+   - Books
    - Dream
 
 category: After reading
